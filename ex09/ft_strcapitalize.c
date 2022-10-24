@@ -6,11 +6,12 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 22:55:46 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/24 16:25:22 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/24 16:58:18 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
 char	*ft_strcapitalize(char *str)
 {
