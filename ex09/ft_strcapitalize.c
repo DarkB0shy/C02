@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 22:55:46 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/23 23:25:05 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/24 16:25:22 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strcapitalize(char *str)
 {
 	int	i;
-	int space;
+	int	space;
 
 	space = 1;
 	i = 0;
@@ -26,6 +26,12 @@ char	*ft_strcapitalize(char *str)
 				str[i] -= 32;
 				space = 0;
 		if (str[i] == 32)
+			space = 1;
+		else if (str[i] >= 43 && str[i] <= 45)
+			space = 1;
+		else if (str[i] == 59)
+			space = 1;
+		else if (str[i] == 63)
 			space = 1;
 		i++;
 	}
