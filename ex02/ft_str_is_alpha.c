@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 13:28:37 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/26 11:07:17 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/26 18:47:35 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_str_is_alpha(char *str)
 	int	i;
 
 	i = 0;
-	if (str[i] == '\0')
+	if (str[0] == 0)
 		return (1);
 	while (str[i])
 	{
