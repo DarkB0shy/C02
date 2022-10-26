@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 12:30:38 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/26 18:45:58 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:37:23 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
